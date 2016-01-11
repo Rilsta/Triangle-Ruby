@@ -23,4 +23,11 @@ describe(Triangle) do
     end
   end
 
+  describe('#not_triangle?') do
+    it('will return true when sum of 2 sides is equal to or less than the length of the third side') do
+      test_triangle = Triangle.new(1,1,4)
+      expect(test_triangle.not_triangle?()).to(eq(true))
+    end
+  end
+
 end
