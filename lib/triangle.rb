@@ -7,7 +7,7 @@ class Triangle
 
   def equilateral?()
     if (@s1 == @s2) && (@s1 == @s3) && (@s2 == @s3)
-      return true
+      return "Equilateral"
     else
       return false
     end
@@ -15,7 +15,7 @@ class Triangle
 
   def scalene?()
     if (@s1 != @s2) && (@s2 != @s3) && (@s1 != @s3)
-      return true
+      return "Scalene"
     else
       return false
     end
@@ -23,7 +23,7 @@ class Triangle
 
   def isosceles?()
     if (@s1 == @s2) || (@s1 == @s3) || (@s2 == @s3)
-      return true
+      return "Isosceles"
     else
       return false
     end
@@ -31,7 +31,7 @@ class Triangle
 
   def not_triangle?()
     if ((@s1 + @s2) <= @s3) || ((@s1 + @s3) <= @s2) || ((@s2 + @s3) <= @s1)
-      return true
+      return "Not a Triangle"
     else
       return false
     end
