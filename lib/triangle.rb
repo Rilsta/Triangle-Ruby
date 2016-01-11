@@ -20,4 +20,12 @@ class Triangle
       return false
     end
   end
+
+  def isosceles?()
+    if ((@s1 == @s2) || (@s1 == @s3) || (@s2 == @s3))
+      return true
+    else
+      return false
+    end
+  end
 end

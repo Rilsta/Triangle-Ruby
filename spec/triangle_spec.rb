@@ -16,4 +16,11 @@ describe(Triangle) do
     end
   end
 
+  describe('#isosceles?') do
+    it('will return true when 2 inputs are equal and 1 is not') do
+      test_triangle = Triangle.new(1,1,2)
+      expect(test_triangle.isosceles?()).to(eq(true))
+    end
+  end
+
 end
